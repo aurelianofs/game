@@ -18,6 +18,7 @@
 
     ws.onmessage = e => {
       console.log('onmessage: ', e)
+      console.log( JSON.parse(e.data) )
     }
 
     ws.onclose = e => {

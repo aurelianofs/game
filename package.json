@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@lensesio/cypress-websocket-testing": "^1.0.1",
+    "cypress": "^9.4.1",
+    "rxjs": "^7.5.2"
+  }
+}
