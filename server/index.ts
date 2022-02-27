@@ -1,16 +1,17 @@
+import 'dotenv/config'
 import * as express from 'express'
 import { Server } from 'http'
 import { WebSocket } from 'ws'
 import wsServer from './ws'
 
 const app = express()
-const port = 3000
+const port = process.env.PORT ?? 8000;
 
 app.get('/', (_, res) => {
   res.send('Hello World!')
 })
 
-app.get('/test', function(req, res) {
+app.get('/test', (req, res) => {
   res.sendFile(__dirname + '/test.html');
 });
 
