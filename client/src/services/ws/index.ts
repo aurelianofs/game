@@ -1,7 +1,6 @@
 let HOST = window.location.origin.replace(/^https?/, 'ws');
 
 if(process.env.NODE_ENV === 'development') {
-  console.log(process.env.NODE_ENV);
   HOST = HOST.replace(/:\d*/, process.env.SERVER_PORT ?? '8000');
 }
 
