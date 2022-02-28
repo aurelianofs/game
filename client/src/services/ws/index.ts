@@ -1,7 +1,7 @@
 let HOST = window.location.origin.replace(/^https?/, 'ws');
 
 if(process.env.NODE_ENV === 'development') {
-  HOST = HOST.replace(/:\d*/, process.env.SERVER_PORT ?? '8000');
+  HOST = HOST.replace(/:\d*/, process.env.REACT_APP_SERVER_PORT ?? '8000');
 }
 
 // const savedPlayerID = localStorage && localStorage.getItem('playerID') ? JSON.parse(localStorage.getItem('playerID')) : null;
